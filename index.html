@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Grid Layout</title>
+</head>
+<body>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+    height: 100vh; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(auto, 50%) 1fr 3em; 
+    grid-template-rows: minmax(100px, auto); 
+    grid-gap: 10px; 
+    width: 80%; 
+    margin: 1vh;
+    align-items: center;
+}
+
+.grid-container div {  
+    padding: 20px;
+    text-align: center; 
+    margin: 0%;
+}
+    </style>    
+    <div class="grid-container">
+        <div class="colorbox">1</div>
+        <div class="texta">Lorem ipsum dolor sit amet</div>
+        <div class="colorbox">3</div>
+        <div class="colorbox">1</div>
+        <div class="texta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus hic esse dolorem provident? Nobis recusandae porro numquam eum quasi illum autem quis, nihil cupiditate fugit rem sint. Nulla, facilis molestias.</div>
+        <div class="colorbox">3</div>
+    </div>
+    <div2 class="grid-container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti at ducimus suscipit officia, fugit, eos consectetur maiores aliquid tempore esse fugiat sed error. Voluptatibus inventore porro aut provident illo.</div>
+        <div class="birbs"><img src="https://media.muckrack.com/profile/images/26024941/4-e1733475319907.jpg.256x256_q100_crop-smart.jpg" alt="birb"></div>
+    </div2>
+</body>
+</html>
