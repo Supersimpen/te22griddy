@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(22, 1fr);
+  gap: 10px;
+  row-gap: 15px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 9;   
+}
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+.item4 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+.item5 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+.item6 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 15;
+    grid-row-end: 20;
+}
+.item7 {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 15;
+    grid-row-end: 20;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div> 
+</div>
+
+</body>
+</html>
+
+
